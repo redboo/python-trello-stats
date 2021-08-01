@@ -1,0 +1,4 @@
+KEY = str
+SECRET = str
+TOKEN = str
+BOARD_ID = str
