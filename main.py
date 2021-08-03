@@ -50,7 +50,7 @@ if period:
     [board_users.pop(active, None) for active in action_users]
 
     if board_users:
-        print("Users to be removed: ", board_users)
+        print(f"{len(board_users)} users to be removed: {board_users}")
         confirm = input("Remove users [y/n]: ")
         if 'y' == confirm.lower():
             print("Remove started:")
