@@ -6,11 +6,10 @@ trello = TrelloApi(KEY, TOKEN)
 
 # Get filtered members
 users = trello.boards.get_membership(
-    BOARD_ID, filter='normal', member='true', member_fields='fullName')
+    BOARD_ID, filter='normal', member='true', member_fields='username')
 board_users = {}
 for user in users:
-    board_users[user['idMember']] = user['member']['fullName']
-
+    board_users[user['idMember']] = user['member']['username']
 
 # Get actions
 action_users = []
